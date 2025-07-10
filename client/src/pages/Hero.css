@@ -1,0 +1,52 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding-top: 80px; /* Offset for fixed navbar */
+  background-image: radial-gradient(circle, rgba(0, 191, 255, 0.1) 0%, rgba(10, 10, 16, 0) 60%);
+}
+
+.hero-content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 5px;
+}
+
+.hero-slogan {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  color: var(--light-gray);
+  max-width: 600px;
+}
+
+/* This is the new, guaranteed-to-work rule */
+.hero-slogan span {
+  display: inline-block;  /* <-- THIS IS THE CRITICAL ADDITION */
+  margin-right: 0.5em;   /* Increased the space slightly for better visual balance */
+}
+
+.hero-button {
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  background: var(--primary-blue);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, var(--primary-blue), var(--accent-green));
+  color: var(--dark-bg);
+}

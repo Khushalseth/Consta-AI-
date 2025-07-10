@@ -1,0 +1,29 @@
+.footer {
+  padding: 2rem 0;
+  background-color: var(--dark-bg);
+  border-top: 1px solid rgba(0, 191, 255, 0.2);
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: #b0b0c0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-green);
+}

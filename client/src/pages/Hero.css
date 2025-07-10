@@ -50,3 +50,20 @@
   background: linear-gradient(90deg, var(--primary-blue), var(--accent-green));
   color: var(--dark-bg);
 }
+
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 4rem; /* Drastically reduce font size */
+    letter-spacing: 2px;
+  }
+
+  .hero-slogan {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 3rem; /* Even smaller for very small phones */
+  }
+}
